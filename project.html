@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Projects</title>
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="\style\project.css" />
+  </head>
+  <body>
+    <div class = "sidebar">
+        <header>Edison Wang</header>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+    </div>
+    <div class = "project">
+        <h1>Projects</h1>
+        <br /><br />
+        <h2>1. Poultry Farming Intelligence System</h2> <br />
+        <p><strong>Project Description: </strong> <br />
+            This web application aims to help poultry farmers improve profitability by leveraging machine learning and big data techniques. For example, the application automates the HVAC settings based on indoor conditions. It can also predict certain poultry industry specific KPIs such as weight, mortality, feed conversion. Therefore, precision farming could be achieved which significantly reduces the cost of production.
+        </p>
+        <br />
+        <p>
+        • Machine Learning: Ridge Regression. <br />
+        • Frontend: Node.JS. <br />
+        • Backend: Django. <br />
+        • Data pipeline: Apache Airflow. <br />
+        • Library: Pandas, Numpy, Matplotlib, Seaborn, Sklearn, Mglearn. <br />
+
+        </p>
+        <br />
+        <h3>Data Analysis: Broiler chicken weight VS Environmental factors</h3>
+        <br />
+        <img class = "image" src = images\p1.1.png>
+        <img class = "image" src = images\p1.7.png>
+        <br /><br />
+
+        <h3>Network Diagram: overview of the technology infrastructure.</h3>
+        <img class = "image2" src = images\p1.4.jpg>
+        <br /><br />
+
+        <h3>Machine Learning Pipeline: how each prediction models are trained using Apache AirFlow.</h3>
+        <br />
+        <img class = "image3" src = images\p1.5.png>
+        <img class  = "image4" src = images\p1.3.png>
+        <br /><br />
+
+        <h3>Project Outcome</h3>
+        <p>
+        This application intends to assist stakeholders in making informed business decisions driven by historical production data, ultimately enhancing production efficiency and profit margins.
+        However, the first phase of this project faced challenges due to limited data availability, which could result in several issues such as overfitting and lack of diversity, lead to weak generalization to new data and imprecise predictions. 
+        Potential solutions have been proposed to industry partner, including data quality evaluation, data augmentation, and IoT data sharing frequency. 
+        </p>
+        <br /><br /><br />
+
+
+        <h2>2. Driver Drowsiness Detection System </h2> <br />
+        <p><strong>Project Description: </strong> <br />
+            This project aims to detect driver drowsiness using computer vision and deep learning techniques. The application is able to detect the driver's eyes and mouth and alert the driver when the eyes are closed for a certain period of time. Thus potentially contribute to overall road safety. <br />
+
+        </p>
+        <br />
+        <p>
+        • Machine Learning: Computer Vision. <br />
+        • Algorithm: CNN (Convolutional Neural Network). <br />
+        • Model: “ResNet-50” from TensorFlow. <br /> 
+        • Library: Pandas, NumPy, Matplotlib, Tensorflow.keras, Scipy, etc. <br /> 
+        </p>
+        <br />
+        <h4>Project idea: model can be embedded into future vehicle's interior camera. </h4>
+        <img class = "image3" src = images\p2.1.png>
+        <br /><br />
+
+        <h3>Training Examples</h3>
+        <br />
+        <img class = "image5" src = images\p2.4.png>
+        <img class = "image5" src = images\p2.5.png>
+        <br /><br />
+
+        <h3>Solution Workflow:</h3>
+        <br />
+        <img class = "image2" src = images\p2.2.png>
+        <br />
+
+        <h3>There are 3 main steps in this project:</h3> 
+            <ls>
+                <li>1. Yamn Detection model: Detects the mouth position. <a href = "https://colab.research.google.com/gist/EEEEEEdison/a89e0156bde6690112536077216317d6/projectd_model1_yawn.ipynb#scrollTo=dcnkjcStvLFf"
+                    target = "_blank">See code here: (Part1/3)</a></li> 
+                <li>2. Eye Detection Model: Detect the eyes position. <a href = "https://colab.research.google.com/gist/EEEEEEdison/12620f0fe00ed8d281d1454cbeed1025/projectd_model2_eyes.ipynb"
+                    target = "_blank">See code here: (Part2/3) </a></li>
+                <li>3. Alarm System: For example, if driver yamns and his eyes are closed for over 0.5sec, alarms are triggered. 
+                    <a href = "https://colab.research.google.com/gist/EEEEEEdison/12249d0c22b11cd2a9c033ac68b1510b/projectd_alarm_system.ipynb"
+                    target = "_blank">See code here: (Part3/3) </a> </li>
+            </ls> 
+        <br /><br />
+        <h3>Model Accuracy:</h3>
+        <br />
+        <img class = "image" src = images\p2.6.png>
+        <img class = "image" src = images\p2.7.png>
+        
+        <br /><br /><br />
+
+        <h2>3. NLP with Disaster Tweets </h2>
+        <a href = "https://colab.research.google.com/gist/EEEEEEdison/06889eb3a05d2b5ec30b9cd80e577de8/nlp_disaster_tweets.ipynb"
+                    target = "_blank">See code here: click. </a> <br /><br />
+
+        <p><strong>Project description:</strong> <br />
+        This a practice project aims to predict which Tweets are about real disasters and which ones are not. <br />
+        (Kaggle competition: <a href = "https://www.kaggle.com/competitions/nlp-getting-started" target = "_blank">Link</a>) 
+        </p> <br />
+        
+        <p>
+            • Machine Learning: Natural Language Processing. <br />
+            • Model: TensorFlow.keras.Sequencial. <br /> 
+            • Library: Pandas, NumPy, Matplotlib, Tensorflow.keras, Tokenizer, pad_sequences. <br /> 
+        </p><br />
+        <h4>Steps:</h4>
+        <p>
+            <ls>
+                <li>1. Data Preprocessing: Tokenization, Padding, etc.
+                    <li>
+                        • Tokenization: turn words into numeric tokens. <br />
+                        • text_to_sequences: creates sequences of tokens representing each sentence. <br />
+                        • Padding: make all sequences the same length (adding 0's). <br />
+                    </li>
+                </li> 
+
+                <li>2. Model Compiling. </li>
+                <li>3. Model Training. </li>
+                <li>4. Model Evaluation. </li>
+            </ls>
+        </p>
+        <br /><br />
+        <h3>Model Accuracy:</h3>
+        <br />
+        <img class = "image" src = images\p3.1.png>
+        <img class = "image" src = images\p3.2.png>
+        
+        <br /><br /><br />
+           
+        <h2>4. Casino Games Profit Analysis (Excel Dashboard) </h2><br />
+        <p><strong>Description:</strong>
+        This project aims to analyze the profit and risk of 5 different casino games and provide insights for the casino managers.
+        For example, analysis are broken down into per game, per month, per day, and even per hour basis. Casino managers can than rearrange the service rates or opening hours for each game to potentially maximize profit. <br /> 
+        <br />
+        </p> <br />
+
+        <img class = "image-excel" src = images\p4.1.png>
+        <br /><br /><br /><br />
+
+        <h2>5. SQL Database Design for Car Dealership </h2><br />
+        <p><strong>Description:</strong>
+        This project aims to design a SQL database for a car dealership. The database is able to store information about the vehicles, dealerships, employess, customer, and transactions. <br />
+        </p>
+        <br />
+        <p>
+            <ls>
+                <li>• Database Design: ERD(Entity Relationship Diagram)</li>
+                <li>• Database Implementation: Microsoft SQL Server</li>
+                
+                <li>• Database Query: SQL</li>
+                
+                <li>• Data warehousing: SSRS (SQL Server Reporting Services)</li>
+                
+                <li>• Database Visualization: PowerBI</li>
+            </ls>
+        </p><br/>
+        <p>The following are some sample images: </p> <br />
+        <h3>Create view with Employee, Customer, and Vehicle Sales information.</h3>
+        <img class = "image8" src = images\p5.1.png> <br /><br />
+        <h3>Create main procedure:</h3>
+        <img class = "image8" src = images\p5.2.png><br /><br />
+        <h3>Test report on SSRS:</h3>
+        <img class = "image8" src = images\p5.3.png><br /><br />
+        <br /><br /><br />
+    </div>
+  </body>
+</html>
