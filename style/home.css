@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(196, 208, 211, 0.433);
+  }
+  
+
+  .Edison {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: left;
+    margin-top: 100px;
+  }
+
+    .Edison-photo {
+    position: fixed;
+    width: 25%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .Edison-photo img {
+    border-radius: 40%;
+    width: 60%;
+    object-fit: cover;
+    position: center;
+    margin-left: 50px;
+  }
+
+  .Edison-photo img:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+
+  .Edison-photo p{
+    font-family: Ubuntu, Roboto, Arial, Verdana;
+    font-weight: 600;
+    font-size: 19px;
+    color: rgb(12, 1, 71);
+    margin: 0;
+    margin-left: 20px;
+    margin-right: 40px;
+  }
+  
+  .Edison-content {
+    margin-top: 100px;
+    margin-left: 350px;
+  }
+
+  .Edison-content h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: rgb(12, 1, 71);
+    margin: 0;
+  }
+
+  .Edison-content p {
+    font-family: Ubuntu, Roboto, Arial, Verdana;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .car-photo {
+    width: 20%;
+  }
+
+  .music-photo {
+    width: 20%;
+  }
+
+  h2 {
+    font-size: 30px;
+  }

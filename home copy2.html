@@ -10,47 +10,106 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style/topbar.css" />
-    <link rel="stylesheet" href="style/home.css" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: rgba(101, 116, 120, 0.433);
+      }
+      
+
+      .Edison {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: left;
+        margin-top: 100px;
+      }
+    
+        .Edison-photo {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+
+
+      }
+
+      .Edison-photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      
+      .Edison-content {
+        margin-left: 50px;
+      }
+
+      .Edison-content h1 {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+        color: rgb(12, 1, 71);
+        margin: 0;
+      }
+
+      .Edison-content p {
+        font-family: Ubuntu, Roboto, Arial, Verdana;
+        font-weight: 400;
+        font-size: 20px;
+        margin: 0;
+      }
+
+      .car-photo {
+        width: 20%;
+      }
+
+      .music-photo {
+        width: 20%;
+      }
+
+      h2 {
+        font-size: 30px;
+      }
+
+  
+
+    </style>
   </head>
 
   <body>
     <header>
       <div class="Topbar">
         <div class="Topbar-logo">
-          <a class="web-name" href="home.html">EDISON WANG</a>
+          <a class="web-name" href=".">EDISON WANG</a>
         </div>
         <div class="Topbar-content">
-          <p><a href="home.html">HOME</a></p>
-          <p><a href="resume.html">RESUME</a></p>
-          <p><a href="project.html">PROJECTS</a></p>
-          <p><a href="songcovers.html">SongCovers</a></p>
-          <p><a href="connect.html">CONNECT</a></p>
+          <p>HOME</p>
+          <p>RESUME</p>
+          <p>PROJECTS</p>
+          <p>SongCovers</p>
+          <p>CONNECT</p>
         </div>
       </div>
-      
+
+      <div class="Edison">
         
         <div class="Edison-photo">
-          <img src="images/Edison-photo.jpg">
-          <br />
-          <br />
-          <p>With 1+ year of invaluable industry experience 
-            in data analytics, complemented by 5 years of 
-            related educational background, I am fully prepared 
-            and eager to embrace my next challenge. 
-          </p>
+          <img src="images/image.png">
+          <img src="images/g-logo.png">
+          <p>Edison Wang</p>
         </div>
 
         <div class="Edison-content">
           <h1>Hi There!</h1>
           <p>
             <br />
-This is Edison, a Junior <strong>Data Scientist/Analyst</strong>.
+This is Edison, a Junior Data Scientist/Analyst.
  Here, I'll be showing some of my skills and experience in handling data.
 
 You'll find examples on some of the works I've done under the "PROJECTS" page, such as 
 database management, data visualization, and different machine learning projects.
 
-But this website isn't just about work. I also want to share my personal interests and life story with you. You'll get to know the real me beyond the charts and graphs. <br /><br />
+But this website isn't just about work. I also want to share my personal interests and life story with you. You'll get to know the real me beyond the charts and graphs. <br />
 
 
 Thanks for stopping by, cheers! <br />
@@ -113,7 +172,7 @@ Thanks for stopping by, cheers! <br />
           <h1>Sports</h1>
           <p>
             Skateboarding, BMX, Snowboarding. I love them all. <br />
-            For me, challenge is never a challenge. <br /> 
+            For me, skateboarding is much more than just a sport — it's a way of life. 
           </p>
           <video width="320" height="240" controls>
             <source src="images/skate-video.mp4" type="video/mp4">
@@ -127,7 +186,7 @@ Thanks for stopping by, cheers! <br />
           <br /><br />
         
         </div>
-      
+      </div>
     
    
   </body>

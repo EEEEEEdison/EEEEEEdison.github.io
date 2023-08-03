@@ -1,5 +1,6 @@
 body {
     font-family: Ubuntu, Roboto, Arial, Verdana;
+    background-color: rgba(196, 208, 211, 0.433);
     /*
     font-size: 20px;
     font-weight: 400;
@@ -19,17 +20,19 @@ body {
 .sidebar{
     position: fixed;
     left: 0;
-    width: 350px;
+    margin-top: 0;
+    width: 300px;
     height: 100%;
-    background: #042331;
+    background: #24292b;;
 }
 
 .sidebar header {
-    font-size: 22px;
+    font-size:30px;
+    font-weight: 600;
     color: white;
     text-align: center;
     line-height: 70px;
-    background: #063146;
+    background: #24292b;
     user-select: none;
 }
 
@@ -60,7 +63,7 @@ ul li:hover a{
 .project {
     position: flex;
     margin-left: 400px;
-    margin-top: 20px;
+    margin-top: 80px;
     margin-right: 100px;
 }
 
@@ -105,3 +108,8 @@ ul li:hover a{
     border-radius: 10px;
     margin-left: 10px;
 }
+
+#excel, #SQL, #NLP, #computer-vision {
+    padding-top: 70px;
+}
+{

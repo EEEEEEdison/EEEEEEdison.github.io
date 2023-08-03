@@ -10,19 +10,35 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="\style\project.css" />
+    <link rel="stylesheet" href="\style\topbar.css" />
   </head>
   <body>
+    <div class="Topbar">
+        <div class="Topbar-logo">
+          <a class="web-name" href="home.html">EDISON WANG</a>
+        </div>
+        <div class="Topbar-content">
+          <p><a href="home.html">HOME</a></p>
+          <p><a href="resume.html">RESUME</a></p>
+          <p><a href="project.html">PROJECTS</a></p>
+          <p><a href="songcovers.html">SongCovers</a></p>
+          <p><a href="connect.html">CONNECT</a></p>
+        </div>
+      </div>
+      
     <div class = "sidebar">
-        <header>Edison Wang</header>
+        <header>Catogories</header>
         <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="project.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="project.html">Chicken App</a></li>
+            <li><a href="#computer-vision">Computer Vision</a></li>
+            <li><a href="#NLP">NLP</a></li>
+            <li><a href="#excel">Excel</a></li>
+            <li><a href="#SQL">SQL</a></li>
     </div>
     <div class = "project">
         <h1>Projects</h1>
         <br /><br />
-        <h2>1. Poultry Farming Intelligence System</h2> <br />
+        <h2 id="chicken-app">1. Poultry Farming Intelligence System</h2> <br />
         <p><strong>Project Description: </strong> <br />
             This web application aims to help poultry farmers improve profitability by leveraging machine learning and big data techniques. For example, the application automates the HVAC settings based on indoor conditions. It can also predict certain poultry industry specific KPIs such as weight, mortality, feed conversion. Therefore, precision farming could be achieved which significantly reduces the cost of production.
         </p>
@@ -61,7 +77,7 @@
         <br /><br /><br />
 
 
-        <h2>2. Driver Drowsiness Detection System </h2> <br />
+        <h2 id="computer-vision">2. Driver Drowsiness Detection System </h2> <br />
         <p><strong>Project Description: </strong> <br />
             This project aims to detect driver drowsiness using computer vision and deep learning techniques. The application is able to detect the driver's eyes and mouth and alert the driver when the eyes are closed for a certain period of time. Thus potentially contribute to overall road safety. <br />
 
@@ -107,7 +123,7 @@
         
         <br /><br /><br />
 
-        <h2>3. NLP with Disaster Tweets </h2>
+        <h2 id="NLP">3. NLP with Disaster Tweets </h2>
         <a href = "https://colab.research.google.com/gist/EEEEEEdison/06889eb3a05d2b5ec30b9cd80e577de8/nlp_disaster_tweets.ipynb"
                     target = "_blank">See code here: click. </a> <br /><br />
 
@@ -145,7 +161,7 @@
         
         <br /><br /><br />
            
-        <h2>4. Casino Games Profit Analysis (Excel Dashboard) </h2><br />
+        <h2 id="excel">4. Casino Games Profit Analysis (Excel Dashboard) </h2><br />
         <p><strong>Description:</strong>
         This project aims to analyze the profit and risk of 5 different casino games and provide insights for the casino managers.
         For example, analysis are broken down into per game, per month, per day, and even per hour basis. Casino managers can than rearrange the service rates or opening hours for each game to potentially maximize profit. <br /> 
@@ -155,7 +171,7 @@
         <img class = "image-excel" src = images\p4.1.png>
         <br /><br /><br /><br />
 
-        <h2>5. SQL Database Design for Car Dealership </h2><br />
+        <h2 id="SQL">5. SQL Database Design for Car Dealership </h2><br />
         <p><strong>Description:</strong>
         This project aims to design a SQL database for a car dealership. The database is able to store information about the vehicles, dealerships, employess, customer, and transactions. <br />
         </p>
