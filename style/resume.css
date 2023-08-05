@@ -2,12 +2,18 @@ body {
   background-color: rgba(196, 208, 211, 0.433);
 }
   
+  .resume-div{
+    margin-left: 20%;
+    margin-right: 15%;
+    margin-bottom: 10%;
+    padding: 0;
+
+  }
   h1 {
     font-family: Ubuntu,Roboto, Arial, Verdana;
     font-size: 40px;
     font-weight: 400;
     text-align: left;
-    margin-left: 300px;
     margin-top: 100px;
     margin-bottom: 40px;
   }
@@ -17,7 +23,6 @@ body {
     font-size: 20px;
     font-weight: 400;
     text-align: left;
-    margin-left: 300px;
     margin-top: 20px;
   }
 
@@ -25,14 +30,24 @@ body {
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 20px;
+    text-decoration: none;
+  }
+
+  .title-project {
+    font-family: Ubuntu, Roboto, Arial, Verdana;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    color: #000000;
   }
 
   .jobs {
     font-family: Ubuntu,Roboto, Arial, Verdana;
     font-size: 25px;
-    font-weight: 400;
+    font-weight: 600;
     font-style: italic;
-    color: rgba(88, 1, 69, 0.655);
+    color: rgba(31, 29, 150, 0.655);
   }
 
 
