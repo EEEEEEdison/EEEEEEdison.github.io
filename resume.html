@@ -1,204 +1,331 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewprot" content="width=device-width, initial-scale=1" />
-    <title>Edison Resume</title>
-    <link rel="stylesheet" href="style/resume.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Home Page</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Ubuntu:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="Topbar">
-      <div class="Topbar-logo">
-        <a class="web-name" href="home.html">EDISON WANG</a>
-      </div>
-      <div class="Topbar-content">
-        <p><a href="home.html">HOME</a></p>
-        <p><a href="resume.html">RESUME</a></p>
-        <p><a href="project.html">PROJECTS</a></p>
-        <p><a href="songcovers.html">SongCovers</a></p>
-        <p><a href="connect.html">CONNECT</a></p>
-      </div>
-    </div>
+        href="https://fonts.googleapis.com/css2?family=Anta&family=Black+Ops+One&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Protest+Strike&family=Rubik+Bubbles&display=swap"
+        rel="stylesheet">
+    
 
-    <div class="resume-div">
-      <h1>Edison Wang</h1>
+    <!--Bootstrap CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 
-      <p class="title">Objective</p>
-      <p class="content">
-        Seeking a <strong>Data Analyst/Data Scientist</strong> role to elevate
-        organizational decision-making!
-      </p>
+    <!--Main CSS File-->
+    <link href="./assets/css/style.css" rel="stylesheet">
 
-      <p class="title">Skills</p>
-      <p class="content">
-        <strong>Programming Languages</strong>: Python, SQL, R, (HTML, CSS,
-        JavaScript). <br />
-        <strong>Software</strong>: PowerBI, Tableau, Git, ERP systems, Excel.
-        <br />
-        <strong>Database</strong>: MS SQL, MySQL, PostgreSQL, MongoDB, CouchDB.
-        <br />
-        <strong>Big data tools </strong>: Apache Hadoop, Hive, Spark, and Kafka.
-        <br />
-        <strong>Languages</strong>: English, Mandarin.
-      </p>
+</head>
 
-      <p class="title">Education</p>
-      <p class="content">
-        <strong>Conestoga College</strong>, Kitchener, Ontario: 2022-2023 <br />
-        >Graduate Certificate in Big Data Solution Architecture (Co-op) <br />
-        <br />
-        <strong>University Of Waterloo</strong>, Waterloo, Ontario: 2014-2018
-        <br />
-        Bachelor of Mathematics: <br />
-        >Major: Financial Analysis &#38; Risk Management. <br />
-        >Minor: Statistics. <br />
-        <br />
-        CFA(Chartered Financial Analyst) Level 1: 2018 <br />
-        Google Data Analytics Certificate, Coursera: 2022 <br />
-      </p>
 
-      <p class="title">Work Experience</p>
-      <p class="content">
-        <strong>Conestoga Smart Centre </strong>| Cambridge, ON. Jan 2023-Apr
-        2023
-        <br />
-        <span class="jobs">Software Developer (Coop)</span> <br />
-        • Data analysis, preprocessing, and visualization using Jupyter Notebook
-        and PowerBI.<br />
-        • Built data pipeline and machine learning models using Apache AirFlow
-        and Jupyter lab.<br />
-        • Conducted extensive research on the poultry farming industry. <br />
-        • Hosted weekly presentations to industry customers and responded to
-        requests promptly. <br />
-        • Participated in system backend design and UI design. <br />
-        • Implemented Agile development and planed weekly sprint duties using
-        Azure DevOps.<br />
-      </p>
+<body>
+    <!--Header Bar-->
+    <header id="header" class="header-top">
+        <div class="container topbar-container">
+            <h1><a class="Edison" href="index.html">Edison Wang</a></h1>
+        </div>
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a class="nav-link" href="index.html">Home</a></li>
+                <li><a class="nav-link" href="about.html">About</a></li>
+                <li><a class="nav-link active" href="resume.html">Resume</a></li>
+                <li><a class="nav-link" href="project.html">Project</a></li>
+                <li><a class="nav-link" href="music.html">Music</a></li>
+                <li><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+    </header>
+    <!--End of Header Bar-->
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+        <div class="container">
+    
+            <!--Page Title Div-->
+            <div class="content">
+                <div id="wrap">
+                    <h1 class="title page-title">RESUME</h1>
+                </div>
+            </div>
 
-      <p class="content">
-        <strong>Sightline Technology Ltd </strong>| Richmond, BC Oct 2021-Jan
-        2022
-        <br />
-        <span class="jobs">Business Analyst Intern</span> <br />
-        • Recorded daily transactions, expenses, and purchase orders using
-        QuickBooks Online. <br />
-        • Built PowerBI dashboards using sales and inventory data for demand
-        forecasting and sales analysis. <br />
-        • Prepared month-end P&L statements and Cash Flow statements for
-        internal use. <br />
-        • Regularly updated and maintained the contents and functionality of the
-        company website. <br />
-      </p>
+            <!--Resume Content-->
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3 class="resume-title"><i class="bi bi-hdd-stack"></i> Summary</h3>
+                    <div class="resume-item pb-0">
+                        <h4>Edison Wang</h4>
+                        <p><em>Innovative and result-oriented Data Engineer. Specializes in data
+                        engineering, data analysis, machine learning, and automation. Proficient in leveraging technology to optimize
+                        data-driven business processes.</em></p>
+                        <p>
+                        <ul class="no-bullets">
+                            <li><i class="bi bi-geo-alt"></i> : Waterloo, Ontario, Canada</li>
+                            <li><i class="bi bi-envelope"></i> : edisonwang898@gmail.com</li>
+                        </ul>
+                        </p>
+                        <br />
+                    </div>
 
-      <p class="content">
-        <strong>Schlueter Acura</strong> | Kitchener, ON. Feb 2020-Sept 2021
-        <br />
-        <span class="jobs">Parts Advisor</span> <br />
-        • Efficiently managed over $1.5M inventory using automotive ERP systems
-        on a daily basis. <br />
-        • Conducted cycle inventory counts and ensured the consistency of
-        inventory data. <br />
-        • Ensured flawless supply chain by maintaining fill rates according to
-        the company standards. <br />
-        • Processed warranty claims/critical backorder requests promptly to
-        obtain customer satisfaction. <br />
-      </p>
 
-      <p class="content">
-        <strong>University of Waterloo, Health Services</strong> | Waterloo, ON.
-        Sept 2016-Dec 2016 <br />
-        <span class="jobs">Patient Flow Facilitator</span> <br />
-        • Ensured efficiency of doctor appointments according to related
-        patients flow. <br />
-        • Assisted department staff in office tasks such as research and
-        digitalization of handwriting files. <br />
-      </p>
+                    <h3 class="resume-title"><i class="bi bi-tools"></i> Skills</h3>
+                    <div class="resume-item pb-0">
+                        <h4>Tool Box</h4>
 
-      <a class="title-project" href="project.html">Projects</a>
+                        <div class = "container-fluid">
+                            <div class="row">
+                                <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+                                    <!-- Python -->
+                                    <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+                                        <h5>Python:Pandas</h5>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-md-6 col-lg-9">
+                                        <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0"
+                                            aria-valuemax="100">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 90%">9/10</div>
+                                        </div>
+                                    </div>
+                                    <br />
+                                    <!-- SQL -->
+                                    <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+                                        <h5>SQL</h5>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-md-6 col-lg-9">
+                                        <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0"
+                                            aria-valuemax="100">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 80%">8/10</div>
+                                        </div>
+                                    </div>
+                                    <br />
+                                    <!-- PowerBI -->
+                                    <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+                                        <h5>PowerBI</h5>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-md-6 col-lg-9">
+                                        <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0"
+                                            aria-valuemax="100">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 90%">9/10</div>
+                                        </div>
+                                    </div>
+                                    <br />
+                                    <!-- Excel -->
+                                    <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+                                        <h5>Excel</h5>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-md-6 col-lg-9">
+                                        <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0"
+                                            aria-valuemax="100">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 20%">2/10</div>
+                                        </div>
+                                    </div>
+                                    <br />
+                                </div>
+                                <!--Right Side-->
+                                <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+                                    <!-- Python -->
+                                    <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+                                        <h5>Python:General</h5>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-md-6 col-lg-9">
+                                        <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0"
+                                            aria-valuemax="100">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 70%">7/10</div>
+                                        </div>
+                                    </div>
+                                    <br />
+                                    <!-- Git -->
+                                    <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+                                        <h5>Git</h5>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-md-6 col-lg-9">
+                                        <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75"
+                                            aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 90%">9/10</div>
+                                        </div>
+                                    </div>
+                                    <br />
+                                    <!-- HTML/CSS -->
+                                    <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+                                        <h5>HTML/CSS</h5>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-md-6 col-lg-9">
+                                        <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75"
+                                            aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 65%">6.5/10</div>
+                                        </div>
+                                    </div>
+                                    <br />
+                                    <!-- Apache -->
+                                    <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+                                        <h5>APACHE</h5>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-md-6 col-lg-9">
+                                        <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75"
+                                            aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 60%">6/10</div>
+                                        </div>
+                                    </div>
+                                    <br />
+                                </div>
+                            </div>                        
+                        </div>
 
-      <p class="content">
-        <strong>1. Poultry Farming Intelligence System</strong> | 2023 <br />
-        Description: This industrial project built an AI application aims to
-        help poultry farmers improve profitability and efficiency by leveraging
-        machine learning techniques and other business intelligence tools.
-        <br />
-        • Data extraction from IoT devices, feature engineering, analysis, and
-        visualization. <br />
-        • Trained regression models for predicting poultry industry KPIs such as
-        the feed conversion ratio. <br />
-        • Frontend: Node.JS. Backend: Django. <br />
-        • Data pipeline: Apache Airflow. <br />
-        • Library: Pandas, Numpy, Matplotlib, Seaborn, Sklearn, Mglearn. <br />
-      </p>
+                        <br />
+                    </div>
+                    
 
-      <p class="content">
-        <strong>2. Driver Drowsiness Detection (Computer Vision) </strong> |
-        2023 <br />
-        Description: Around 330,000 drowsy driving crashes occur annually. The
-        goal of this concept project is to reduce this number and contribute to
-        road safety. This project embedded Machine Learning - Image Recognition
-        into IoT devices to identify drivers' drowsiness according to the eye
-        and mouth position. If the driver is identified to be drowsy, internal
-        vehicle alarms will be triggered to warn the driver.
 
-        <br />
-        • Machine learning: Computer Vision. <br />
-        • Algorithm: CNN (Convolutional Neural Network). <br />
-        • Model: TensorFlow -> ResNet-50. <br />
-        • Library: Pandas, NumPy, Matplotlib, Tensorflow.keras, Scipy, etc.
-        <br />
-      </p>
+                    <h3 class="resume-title"><i class="bi bi-mortarboard"></i> Education </h3>
+                    <div class="resume-item">
+                        <h4>Big Data Solution Architecture</h4>
+                        <h5>Graduate Certificate</h5>
+                        <h5>2022 - 2023</h5>
+                        <p><em>Conestoga College, ON, Canada</em></p>
+                        <p>Skills Acquired: Database Design, Data Warehousing, SQL, Python, Machine Learning, Apache Hadoop/Spark/Kafka. </p>
+                    </div>
+                    <div class="resume-item">
+                        <h4>Financial Analysis <i class="bi bi-plus"></i> Statistics</h4>    
+                        <h5>Bachelor of Mathematics</h5>
+                        <h5>2014 - 2018</h5>
+                        <p><em>University of Waterloo, ON, Canada</em></p>
+                        <p>Skills Acquired: Financial Analysis, Data Analysis, Stock Evaluation, Programming, Statistcal Modeling. </p>
+                        <br />
+                    </div>
 
-      <p class="content">
-        <strong>3. Disaster Tweets Detection (NLP) </strong> | 2023 <br />
-        Description: The project aims to build a highly accurate and efficient
-        model that can distinguish between tweets related to disasters or
-        emergencies and those that are non-disaster related using Natural
-        Language Processing (NLP) techniques. Such language model can be
-        embedded into applications to assist news agencies, disaster response
-        teams, and the general public. <br />
-      </p>
+                    <h3 class="resume-title"><i class="bi bi-patch-check"></i> Certification</h3>
+                    <div class="resume-item">
+                        <h4>1. Microsoft Certified: Power BI Data Analyst</h4>
+                        <h5>Issued by: Microsoft </h5>
+                        <h5>Issued on: Jan, 2024</h5>
+                        <button
+                            onclick="window.open('https://learn.microsoft.com/api/credentials/share/en-us/KeyaoWang-0289/D17B1361DBB3C5F5?sharingId=FF39724A858A6BB4', '_blank')">
+                            Show Credential <i class="bi bi-sign-turn-right-fill"></i>
+                        </button>
+                    </div>
+                    <div class="resume-item">
+                        <h4>2. Chartered Financial Analyst (CFA): Level 1</h4>
+                        <h5>Issued by: CFA Institute</h5>
+                        <h5>Passed on: Dec, 2018</h5>
+                    </div>
 
-      <p class="content">
-        <strong>4. Database design for Automotive Dealership (MSSQL)</strong> |
-        2022 <br />
-        Description: Automotive dealerships relational database design and
-        creation using Microsoft SQL server. <br />
-        • Designed business rules, data structures, and schema. <br />
-        • Created Dimension tables (customer, employee, inventory, order, etc),
-        and Fact table. <br />
-        • Defined database validation rules to avoid data entry error. <br />
-        • Performed ETL (extract, transform, load) into data warehouse. <br />
-        • Query the database for reporting purposes and business analysis.
-        <br />
-      </p>
+                </div>
 
-      <p class="content">
-        <strong>5. "SWAP": sneaker trading application (Python)</strong> | 2022
-        <br />
-        Description: SWAP is a shoe trading application with connectivity to a
-        SQLite database. <br />
-        • Designed business rules and application flow chart. <br />
-        • Fulfilled Sqlite3 database with users and products listing
-        information. <br />
-        • Implemented encryption on users passwords stored in the database.
-        <br />
-        <p>......</p>
-      </p>
+                <!-- Right Div -->
 
-      <p class="title">Interests</p>
-      <p class="content">
-        • Cars: 6+ years of experience working on vehicles. <br />
-        • Music: acoustic guitar, electric guitar. <br />
-        • Sports: Bmx, Skateboard, Snowboard. <br />
-        • Crypto: blockchain and DeFi. <br />
-      </p>
-    </div>
-  </body>
+                <div class="col-lg-6">
+                    <h3 class="resume-title"><i class="bi bi-briefcase"></i> Work Experience</h3>
+
+                    <div class="resume-item">
+                        <h4>Data Engineer</h4>
+                        <h5><a href="https://www.sowatool.com/" target="_blank">Sowa Tool & Machine Co. Ltd.</a></h5>
+                        <h5>Feb,2024 - Present</h5>
+                        <h4>Business Analyst</h4>
+                        <h5><a href="https://www.sowatool.com/" target="_blank">Sowa Tool & Machine Co. Ltd.</a></h5>
+                        <h5>Oct,2023 - Feb,2024</h5>
+                        <p><em>Kitchener, ON</em></p>
+                        <p>
+                        <ul>
+                            <li>Data Engineering: Created robust data pipelines for diverse data integration. </li>
+                            <li>Designed and implemented MySQL databases with automated refreshes. </li>
+                            <li>PowerBI: Designed company dashboards with complex data models and measures using DAX and Power Query. Implemented Row Level Security (RLS) for secure distribution. </li> 
+                            <li>Python: Automated reports generation for efficiency and accuracy. </li> 
+                        </ul>
+                        </p>
+                    </div>
+
+                    <div class="resume-item">
+                        <h4>Software Developer - Coop </h4>
+                        <h5><a href="https://research.conestogac.on.ca/smart-centre" target="_blank">Conestoga Smart Centre</a></h5>
+                        <h5>Jan,2023 - Apr,2023</h5>
+                        <p><em>Cambridge, ON </em></p>
+                        <p>
+                        <ul>
+                            <li>Research: Conducted thorough research on the poultry farming industry. </li>
+                            <li>Data Analysis: Analyzed and visualized industry and company-specific data to meet project needs.</li>
+                            <li>Data Engineering: Developed data cleaning and machine learning pipeline with Apache Airflow and Jupyter Lab.</li>
+                            <li>Agile Implementation: Facilitated seamless collaboration and timely delivery within each sprint.</li>
+                            <li>Documentation: Maintained comprehensive documentation for stakeholders' reference throughout the development process.</li>
+                        </ul>
+                        </p>
+                    </div>
+
+                    <div class="resume-item">
+                        <h4>Business Analyst</h4>
+                        <h5><a href="https://sightlinetech.com/" target="_blank">Sightline Technology</a></h5>
+                        <h5>Oct,2021 - Jan,2022</h5>
+                        <p><em>Richmond, BC </em></p>
+                        <p>
+                        <ul>
+                            <li>Developed python data pipelines from data sources such as Quickbooks.</li>
+                            <li>Developed ad-hoc reports and PowerBI dashboard for reporting usage, supported in
+                                business intelligence enhancement.</li>
+                            <li>Maintained the company website for seamless functionality.</li>
+                            <li>Effectively conveyed insights to management and provided timely technical support.</li>
+                        </ul>
+                        </p>
+                    </div>
+
+                    <div class="resume-item">
+                        <h4>Parts Advisor</h4>
+                        <h5><a href="https://www.schlueteracura.com/" target = "_blank">Schlueter Acura</a></h5>
+                        <h5>Feb,2020 - Sep,2021</h5>
+                        <p><em>Kitchener, ON</em></p>
+                        <p>
+                        <ul>
+                            <li>Managed inventory valued at $1.5M using Automotive ERP systems, conducted cycle counts to
+                            maintain data accuracy.</li>
+                            <li>Maintained fill rates according to industry standards, contributed to a seamless automotive supply chain internally and externally. </li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </section><!-- End Resume Section -->
+    
+    
+    <!--Footer-->
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="mailto:edisonwang898@gmail.com" class="nav-link px-2 text-body-secondary"><i
+                        class="bi bi-envelope-open-fill"></i> Email</a></li>
+            <li class="nav-item"><a href="https://www.linkedin.com/in/eeeeeedison/" target="_blank"
+                    class="nav-link px-2 text-body-secondary"><i class="bi bi-linkedin"></i>
+                    LinkedIn</a></li>
+            <li class="nav-item"><a href="https://github.com/EEEEEEdison" target="_blank"
+                    class="nav-link px-2 text-body-secondary"><i class="bi bi-github"></i>
+                    Github</a></li>
+        </ul>
+        <p class="text-center text-body-secondary">© Edison Wang, 2024</p>
+    </footer>
+    <!--End of Footer-->
+
+
+    <!--Bootstrap JS CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!--Main JS File-->
+    <script src="./assets/js/main.js"></script>
+
+</body>
+
+
+
 </html>

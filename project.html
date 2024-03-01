@@ -1,203 +1,292 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Projects</title>
-    <meta charset="utf-8" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="\style\project.css" />
-    <link rel="stylesheet" href="\style\topbar.css" />
-  </head>
-  <body>
-    <div class="Topbar">
-        <div class="Topbar-logo">
-          <a class="web-name" href="home.html">EDISON WANG</a>
+        href="https://fonts.googleapis.com/css2?family=Anta&family=Black+Ops+One&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Protest+Strike&family=Rubik+Bubbles&display=swap"
+        rel="stylesheet">
+
+
+    <!--Bootstrap CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    
+    <!--Main CSS File-->
+    <link href="./assets/css/style.css" rel="stylesheet">
+
+    <style>
+    
+  
+    </style>
+
+</head>
+
+
+<body>
+    <!--Header Bar-->
+    <header id="header" class="header-top">
+        <div class="container topbar-container">
+            <h1><a class="Edison" href="index.html">Edison Wang</a></h1>
         </div>
-        <div class="Topbar-content">
-          <p><a href="home.html">HOME</a></p>
-          <p><a href="resume.html">RESUME</a></p>
-          <p><a href="project.html">PROJECTS</a></p>
-          <p><a href="songcovers.html">SongCovers</a></p>
-          <p><a href="connect.html">CONNECT</a></p>
-        </div>
-      </div>
-      
-    <div class = "sidebar">
-        <header>Catogories</header>
-        <ul>
-            <li><a href="project.html">Chicken App</a></li>
-            <li><a href="#computer-vision">Computer Vision</a></li>
-            <li><a href="#NLP">NLP</a></li>
-            <li><a href="#excel">Excel</a></li>
-            <li><a href="#SQL">SQL</a></li>
-    </div>
-    <div class = "project">
-        <h1>Projects</h1>
-        <br /><br />
-        <h2 id="chicken-app">1. Poultry Farming Intelligence System</h2> <br />
-        <p><strong>Project Description: </strong> <br />
-            This web application aims to help poultry farmers improve profitability by leveraging machine learning and big data techniques. For example, the application automates the HVAC settings based on indoor conditions. It can also predict certain poultry industry specific KPIs such as weight, mortality, feed conversion. Therefore, precision farming could be achieved which significantly reduces the cost of production.
-        </p>
-        <br />
-        <p>
-        • Machine Learning: Ridge Regression. <br />
-        • Frontend: Node.JS. <br />
-        • Backend: Django. <br />
-        • Data pipeline: Apache Airflow. <br />
-        • Library: Pandas, Numpy, Matplotlib, Seaborn, Sklearn, Mglearn. <br />
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a class="nav-link" href="index.html">Home</a></li>
+                <li><a class="nav-link" href="about.html">About</a></li>
+                <li><a class="nav-link" href="resume.html">Resume</a></li>
+                <li><a class="nav-link active" href="project.html">Project</a></li>
+                <li><a class="nav-link" href="music.html">Music</a></li>
+                <li><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+    </header>
+    <!--End of Header Bar-->
 
-        </p>
-        <br />
-        <h3>Data Analysis: Broiler chicken weight VS Environmental factors</h3>
-        <br />
-        <img class = "image" src = images\p1.1.png>
-        <img class = "image" src = images\p1.7.png>
-        <br /><br />
+    <!--Project Main-->
+    <section id="project" class="project">
+        <div class="container">
+            <!--Page Title-->
+            <div class="content">
+                <div id="wrap">
+                    <h1 class="title page-title">Project</h1>
+                    <br />
+                </div>
+            </div>
+            <div class="row">
+                <!--Project1-->
+                <div class="row">
+                    <h3><i class="bi bi-1-square"></i> Company Dashboard <i class="bi bi-geo-fill"></i> Sowa Tool</h3>
+                    <br />
+                    <br />
+                    
+                    <p><strong>Description:</strong> This is a digital transformation/BI project for SOWA Tools, a Metal machinery distributor serving Canada and the US since 1960.</p>
+                    
+                    <ul class = "project-list">
+                        <li>General Process: Data Pipeline Automation <i class="bi bi-caret-right"></i> Database Implementation <i class="bi bi-caret-right"></i> UI design <i class="bi bi-caret-right"></i> Power BI development.</li>
+                        <li>PowerBI Development: Data Modeling <i class="bi bi-caret-right"></i> DAX Measures Dev <i class="bi bi-caret-right"></i> Visualization <i class="bi bi-caret-right"></i> Functionality Dev <i class="bi bi-caret-right"></i> Distribution with RLS.</li>
+                        <li>Highlights: Quick Access Buttons | Currency Exchange Button | Complex DAX Measures.</li>
+                    </ul>
+                    
+                    <ul class="tech-items">
+                        <li class="tech-item">
+                            <i class="bi bi-microsoft"></i>
+                            Azure</li>
+                        <li class="tech-item">
+                            <i class="bi bi-filetype-py"></i>
+                            Python</li>
+                        <li class="tech-item">
+                            <i class="bi bi-git"></i>
+                            Git</li>
+                        <li class="tech-item">
+                            <i class="bi bi-database-check"></i>
+                            MySQL</li>
+                        <li class="tech-item">
+                            <i class="bi bi-bar-chart-fill"></i>
+                            PowerBI
+                        </li>
+                    </ul>
+                    <br />
+                </div>
+                <hr class="featurette-divider">
+               
 
-        <h3>Network Diagram: overview of the technology infrastructure.</h3>
-        <img class = "image2" src = images\p1.4.jpg>
-        <br /><br />
-
-        <h3>Machine Learning Pipeline: how each prediction models are trained using Apache AirFlow.</h3>
-        <br />
-        <img class = "image3" src = images\p1.5.png>
-        <img class  = "image4" src = images\p1.3.png>
-        <br /><br />
-
-        <h3>Project Outcome</h3>
-        <p>
-        This application intends to assist stakeholders in making informed business decisions driven by historical production data, ultimately enhancing production efficiency and profit margins.
-        However, the first phase of this project faced challenges due to limited data availability, which could result in several issues such as overfitting and lack of diversity, lead to weak generalization to new data and imprecise predictions. 
-        Potential solutions have been proposed to industry partner, including data quality evaluation, data augmentation, and IoT data sharing frequency. 
-        </p>
-        <br /><br /><br />
-
-
-        <h2 id="computer-vision">2. Driver Drowsiness Detection System </h2> <br />
-        <p><strong>Project Description: </strong> <br />
-            This project aims to detect driver drowsiness using computer vision and deep learning techniques. The application is able to detect the driver's eyes and mouth and alert the driver when the eyes are closed for a certain period of time. Thus potentially contribute to overall road safety. <br />
-
-        </p>
-        <br />
-        <p>
-        • Machine Learning: Computer Vision. <br />
-        • Algorithm: CNN (Convolutional Neural Network). <br />
-        • Model: “ResNet-50” from TensorFlow. <br /> 
-        • Library: Pandas, NumPy, Matplotlib, Tensorflow.keras, Scipy, etc. <br /> 
-        </p>
-        <br />
-        <h4>Project idea: model can be embedded into future vehicle's interior camera. </h4>
-        <img class = "image3" src = images\p2.1.png>
-        <br /><br />
-
-        <h3>Training Examples</h3>
-        <br />
-        <img class = "image5" src = images\p2.4.png>
-        <img class = "image5" src = images\p2.5.png>
-        <br /><br />
-
-        <h3>Solution Workflow:</h3>
-        <br />
-        <img class = "image2" src = images\p2.2.png>
-        <br />
-
-        <h3>There are 3 main steps in this project:</h3> 
-            <ls>
-                <li>1. Yamn Detection model: Detects the mouth position. <a href = "https://colab.research.google.com/gist/EEEEEEdison/a89e0156bde6690112536077216317d6/projectd_model1_yawn.ipynb#scrollTo=dcnkjcStvLFf"
-                    target = "_blank">See code here: (Part1/3)</a></li> 
-                <li>2. Eye Detection Model: Detect the eyes position. <a href = "https://colab.research.google.com/gist/EEEEEEdison/12620f0fe00ed8d281d1454cbeed1025/projectd_model2_eyes.ipynb"
-                    target = "_blank">See code here: (Part2/3) </a></li>
-                <li>3. Alarm System: For example, if driver yamns and his eyes are closed for over 0.5sec, alarms are triggered. 
-                    <a href = "https://colab.research.google.com/gist/EEEEEEdison/12249d0c22b11cd2a9c033ac68b1510b/projectd_alarm_system.ipynb"
-                    target = "_blank">See code here: (Part3/3) </a> </li>
-            </ls> 
-        <br /><br />
-        <h3>Model Accuracy:</h3>
-        <br />
-        <img class = "image" src = images\p2.6.png>
-        <img class = "image" src = images\p2.7.png>
-        
-        <br /><br /><br />
-
-        <h2 id="NLP">3. NLP with Disaster Tweets </h2>
-        <a href = "https://colab.research.google.com/gist/EEEEEEdison/06889eb3a05d2b5ec30b9cd80e577de8/nlp_disaster_tweets.ipynb"
-                    target = "_blank">See code here: click. </a> <br /><br />
-
-        <p><strong>Project description:</strong> <br />
-        This a practice project aims to predict which Tweets are about real disasters and which ones are not. <br />
-        (Kaggle competition: <a href = "https://www.kaggle.com/competitions/nlp-getting-started" target = "_blank">Link</a>) 
-        </p> <br />
-        
-        <p>
-            • Machine Learning: Natural Language Processing. <br />
-            • Model: TensorFlow.keras.Sequencial. <br /> 
-            • Library: Pandas, NumPy, Matplotlib, Tensorflow.keras, Tokenizer, pad_sequences. <br /> 
-        </p><br />
-        <h4>Steps:</h4>
-        <p>
-            <ls>
-                <li>1. Data Preprocessing: Tokenization, Padding, etc.
+                <div class="section-title text-center">
+                    <h3 class="featurette-heading fw-normal lh-1">Project Demo</h2>
+                </div>
+                <div id="project1" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#project1" data-slide-to="0" class="active"></li>
+                        <li data-target="#project1" data-slide-to="1"></li>
+                        <li data-target="#project1" data-slide-to="2"></li>
+                        <li data-target="#project1" data-slide-to="3"></li>
+                        <li data-target="#project1" data-slide-to="4"></li>
+                    </ul>
+                
+                    <!-- Slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./assets/img/Project/Sales.jpg" alt="PowerBI">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/img/Project/Marketing.jpg" alt="PowerBI">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/img/Project/Customer.jpg" alt="PowerBI">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/img/Project/Product.jpg" alt="PowerBI">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/img/Project/Inventory.jpg" alt="PowerBI">
+                        </div>
+                    </div>
+                
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#project1" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#project1" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                    <br />
+                    <div class = "text-center">
+                        <p><strong>DISCLAIMER: </strong> Data points are hidden due to business confidentiality. Only UI design and functionality are showcased. </p>
+                    </div>
+                    <br />
+                    <br />
+                </div>
+                <br />
+                <hr class="featurette-divider">
+                <br />
+            
+                    
+            <!--Project2-->
+            <div class="row">
+                <h3><i class="bi bi-2-square"></i> Poultry Farming Intelligence System <i class="bi bi-geo-fill"></i> Conestoga SMART Centre </h3>
+                <br />
+                <br />
+                <p><strong>Description:</strong> This project aims to testify the effectiveness of an AI-based Smart Control System in the poultry farming industry. </p>
+                <ul class="project-list">
+                    <li>Industrial Partner: <a href = "https://www.agrimesh.net/en/home/" target="_blank">Agrimesh Technologies</a> | Press Release: <a
+                            href="https://www.wattagnet.com/poultry-future/new-technologies/article/15537112/poultry-project-to-benchmark-performance-of-smart-controls"
+                            target="_blank">Link.</a></li>
                     <li>
-                        • Tokenization: turn words into numeric tokens. <br />
-                        • text_to_sequences: creates sequences of tokens representing each sentence. <br />
-                        • Padding: make all sequences the same length (adding 0's). <br />
+                            Our team has developed a machine learning-based web application that retrieves live production data from various
+                            poultry houses every 5 minutes via Agrimesh IoT sensors. <br> It continuously trains and delivers the most accurate machine learning models to an API
+                            service which is used for predicting environmental variables for poultry farms.
                     </li>
-                </li> 
 
-                <li>2. Model Compiling. </li>
-                <li>3. Model Training. </li>
-                <li>4. Model Evaluation. </li>
-            </ls>
-        </p>
-        <br /><br />
-        <h3>Model Accuracy:</h3>
-        <br />
-        <img class = "image" src = images\p3.1.png>
-        <img class = "image" src = images\p3.2.png>
-        
-        <br /><br /><br />
-           
-        <h2 id="excel">4. Casino Games Profit Analysis (Excel Dashboard) </h2>
-        <a href="https://onedrive.live.com/embed?resid=65A4135E067E596E%21106&authkey=!ABtYONWrXH5sa5M&em=2" target="blank">View entire workbook here: click.</a><br /><br />
-        <p><strong>Description:</strong>
-        This project aims to analyze the profit and risk of 5 different casino games and provide insights for the casino managers.
-        For example, analysis are broken down into per game, per month, per day, and even per hour basis. Casino managers can than rearrange the service rates or opening hours for each game to potentially maximize profit. <br /> 
-        <br />
-        </p> <br />
-
-        <img class = "image-excel" src = images\p4.1.png>
-
-        <br /><br /><br /><br />
-
-        <h2 id="SQL">5. SQL Database Design for Car Dealership </h2><br />
-        <p><strong>Description:</strong>
-        This project aims to design a SQL database for a car dealership. The database is able to store information about the vehicles, dealerships, employess, customer, and transactions. <br />
-        </p>
-        <br />
-        <p>
-            <ls>
-                <li>• Database Design: ERD(Entity Relationship Diagram)</li>
-                <li>• Database Implementation: Microsoft SQL Server</li>
+                    <li>  My duties include: Data Cleaning, ETL pipelines, and Machine Learning models. </li>
+                </ul>
                 
-                <li>• Database Query: SQL</li>
                 
-                <li>• Data warehousing: SSRS (SQL Server Reporting Services)</li>
+                <ul class="tech-items">
+                    
+                    <li class="tech-item">
+                        <i class="bi bi-filetype-py"></i>
+                        Python
+                    </li>
+                    <li class="tech-item">
+                        <i class="bi bi-git"></i>
+                        Git
+                    </li>
+                    <li class="tech-item">
+                        <i class="bi bi-database-check"></i>
+                        PostgreSQL
+                    </li>
+                    <li class="tech-item">Machine Learning</li>
+                    <li class="tech-item">Scikit-Learn</li>
+                    <li class="tech-item">Django</li>
+                    <li class="tech-item">CI/CD</li>
+                    <li class="tech-item">Apache Airflow</li>
+                    <li class="tech-item">Jupyter Lab</li>
+                    <li class="tech-item">
+                        <i class="bi bi-box"></i>
+                        Docker</li>
+
+                </ul>
+                <br />
+            </div>
+            <hr class="featurette-divider">
+
+            
+            <div class="section-title text-center">
+                <h3 class="featurette-heading fw-normal lh-1">Project Demo</h2>
+            </div>
+            <div id="project2" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#project2" data-slide-to="0" class="active"></li>
+                    <li data-target="#project2" data-slide-to="1"></li>
+                    <li data-target="#project2" data-slide-to="2"></li>
+                    <li data-target="#project2" data-slide-to="3"></li>
+                    <li data-target="#project2" data-slide-to="4"></li>
+                    <li data-target="#project2" data-slide-to="5"></li>
+                </ul>
+            
+                <!-- Slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/img/Project/Agrimesh03.png" alt="PowerBI">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/Project/Agrimesh01.png" alt="PowerBI">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/Project/Agrimesh04.png" alt="PowerBI">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/Project/Agrimesh05.png" alt="PowerBI">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/Project/Agrimesh06.png" alt="PowerBI">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/Project/Agrimesh02.png" alt="PowerBI">
+                    </div>
+                </div>
+            
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#project2" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#project2" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+                <br />
                 
-                <li>• Database Visualization: PowerBI</li>
-            </ls>
-        </p><br/>
-        <p>The following are some sample images: </p> <br />
-        <h3>Create view with Employee, Customer, and Vehicle Sales information.</h3>
-        <img class = "image8" src = images\p5.1.png> <br /><br />
-        <h3>Create main procedure:</h3>
-        <img class = "image8" src = images\p5.2.png><br /><br />
-        <h3>Test report on SSRS:</h3>
-        <img class = "image8" src = images\p5.3.png><br /><br />
-        <br /><br /><br />
-    </div>
-  </body>
-</html>
+                <br />
+                <br />
+            </div>
+            <br />
+            <br />
+            <!--End of Projects-->
+
+              
+        </div>
+    </section>
+
+    
+
+    <!--Footer-->
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="mailto:edisonwang898@gmail.com" class="nav-link px-2 text-body-secondary"><i
+                        class="bi bi-envelope-open-fill"></i> Email</a></li>
+            <li class="nav-item"><a href="https://www.linkedin.com/in/eeeeeedison/" target="_blank"
+                    class="nav-link px-2 text-body-secondary"><i class="bi bi-linkedin"></i>
+                    LinkedIn</a></li>
+            <li class="nav-item"><a href="https://github.com/EEEEEEdison" target="_blank"
+                    class="nav-link px-2 text-body-secondary"><i class="bi bi-github"></i>
+                    Github</a></li>
+        </ul>
+        <p class="text-center text-body-secondary">© Edison Wang, 2024</p>
+    </footer>
+    <!--End of Footer-->
+
+    <!--Bootstrap JS CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <!--Main JS File-->
+    <script src="./assets/js/main.js"></script>
+</body>
