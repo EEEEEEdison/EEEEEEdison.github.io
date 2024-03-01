@@ -9,29 +9,29 @@
     background-size: cover;
 }
 
-/* No backgroud */
+/* No backgroud for about and music page */
 #about, #music{
     background: #040404;
 }
 
-
-
+/* Home moilbe view with Lizhi */
+@media (max-width: 768px) {
+    #home {
+        background: #040404 url("../img/Home/lizhi.jpg");
+        background-size: cover;
+        padding-top: 0px;
+        
+    }
+}
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-/* body {
-    font-family: "Open Sans", sans-serif;
-    background-color: #040404;
-    color: #fff;
-    position: relative;
-    background: transparent;
-} */
-
 
 body {
     padding-top: 65px;
 }
 
+/* Slash as general background*/
 body::before {
     content: "";
     position: fixed;
@@ -50,13 +50,12 @@ body::before {
     }
 }
 
-
+/* a tag: Links */
 a {
     color: #fff;
     text-decoration: none;
-    font-family: "Raleway", sans-serif;
+    font-family: "Anta", sans-serif;
 }
-
 
 a:hover {
     color: #35e888;
@@ -74,13 +73,13 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Raleway", sans-serif; 
+    font-family: "Anta", sans-serif; 
 } 
 
 
 
 /*--------------------------------------------------------------
-# Header/Home Page
+# Home Page
 --------------------------------------------------------------*/
 #header {
     transition: ease-in-out 3s;
@@ -90,7 +89,6 @@ h6 {
     align-items: center;
     z-index: 10;
     overflow-y: auto;
-
     justify-content: space-between;
     padding: 0 20px;
 } 
@@ -98,7 +96,6 @@ h6 {
 #header * {
     transition: ease-in-out 1s;
 }
-
 
 #header h1 {
     font-size: 120px;
@@ -114,12 +111,10 @@ h6 {
 
 #header h1 a,
 #header h1 a:hover {
-    /* color: #c5caca; */
     color: #d3cdd2;
     line-height: 1;
     display: inline-block;
 }
-
 
 
 #header h2 {
@@ -213,16 +208,20 @@ h6 {
     margin: 0;
 }
 
+
+/* Mobile Header for Home Page */
 @media (max-width: 768px) {
-    #header.header-top {
-        height: 60px;
+    #home .container {
+        transition: ease-in-out 2s;
+            position: relative;
+            height: 70vh;
+            display: flex;
+            z-index: 10;
+            overflow-y: auto;
+            justify-content: flex-start;
+            padding: 0 20px;
     }
-
-    #header.header-top h1 {
-        font-size: 26px;
-    }
-}  */
-
+}
 
 /*--------------------------------------------------------------
 # Navigation Bar
@@ -380,7 +379,6 @@ h6 {
 --------------------------------------------------------------*/
 
 
-
 .rounded-image-container {
     width: 250px;
     /* Adjust as needed */
@@ -535,24 +533,6 @@ h6 {
 # Project
 --------------------------------------------------------------*/
 
-/* Temp Page */
-.coming-soon {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    /* Semi-transparent black background */
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 100px;
-    font-weight: bold;
-}
-
-
 .project-list {
     padding-left: 40px;
 }
@@ -641,8 +621,43 @@ h6 {
   object-fit: cover; 
 }
 
+/* #project2 h3{
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 600;
+    color: red;
+    margin-bottom: -10px;
+   
+} */
 
-
+#project2 h3 {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 600;
+    font-size: 20px;;
+    display: inline-block;
+    padding: 10px 10px;
+    background-color: #7a7a7a;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: -20px;
+}
+/* #project2 h3 {
+    position: absolute;
+    right: ((100% - $carousel-caption-width) / 2);
+    bottom: 20px;
+    left: ((100% - $carousel-caption-width) / 2);
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: red;
+    text-align: center;
+} */
+/* #resume h1 {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+} */
 
 /*--------------------------------------------------------------
 # Music
@@ -760,13 +775,18 @@ h6 {
 
 }
 
-/* Custom styles for the progress bar */
+/* Styles for the progress bar */
 .progress {
     background-color: grey;
     height: 10px;
     width: 100%;
-
-    /* Adjust the height of the progress bar */
 }
 
 
+/* Mobile View Contact List*/
+@media (max-width: 768px) {
+    #contact .align-items-center {
+        margin-right: auto;
+        margin-left: 130px;
+    }
+}
