@@ -702,7 +702,7 @@ h6 {
         }
 
 
-/* Youtube Video */
+/* Youtube Video -aspect ratio: 16/9 */ 
 .video-frame {
     width: 560px;
     height: 315px;
@@ -717,8 +717,16 @@ h6 {
     }
 
     .video-frame {
-        width: 445px;
-        height: 250px;
+        align-items: center;
+        width: 462px;
+        height: 260px;
+    }
+
+    #music h2 {
+        font-family: "Protest Strike", sans-serif;
+        font-weight: 400;
+        font-size: larger;
+        font-style: normal;
     }
 }
 
