@@ -716,9 +716,14 @@ h6 {
         line-height: 45px;
     }
 
-    .video-frame {
+    /* .video-frame {
         width: 445px;
         height: 250px;
+    } */
+
+    .video-frame {
+        width: 355px;
+        height: 200px;
     }
 
     #music h2 {
