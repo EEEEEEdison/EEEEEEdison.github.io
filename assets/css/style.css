@@ -537,6 +537,7 @@ h6 {
     padding-left: 40px;
 }
 
+/* Tech Items List */
 
 .tech-items {
     list-style-type: none;
@@ -548,7 +549,9 @@ h6 {
 }
 
 .tech-item {
+    display: inline-block;
     margin-right: 10px;
+    margin-bottom: 10px;
     /* Adjust spacing between items */
     border: 2px solid green;
     /* Green border */
@@ -556,6 +559,17 @@ h6 {
     /* Adjust padding as needed */
     border-radius: 5%;
 }
+
+/* Tech Item Mobile view */
+@media (max-width: 767px) {
+    .tech-items {
+        display: block;
+        margin: 0 0 10px;
+        text-align: center;
+    }
+}
+
+
 
 /* Carousel */
 .carousel {
