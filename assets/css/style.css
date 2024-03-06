@@ -717,18 +717,16 @@ h6 {
     }
 
     .video-frame {
-        align-items: center;
         width: 445px;
         height: 250px;
     }
 
     #music h2 {
-        font-family: "Protest Strike", sans-serif;
-        font-weight: 400;
-        font-size: larger;
-        font-style: normal;
+        font-size: 20px;
     }
 }
+
+
 
 
 /* Right Side: List Group */
