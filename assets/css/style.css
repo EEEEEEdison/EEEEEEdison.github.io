@@ -7,6 +7,8 @@
 #home {
     background: #040404 url("../img/Home/homepage.webp");
     background-size: cover;
+    /* 100% view port height */
+    height: 100vh;
 }
 
 /* No backgroud for about and music page */
