@@ -25,64 +25,17 @@
         
     }
 }
+
+
 /*--------------------------------------------------------------
-# General
+# Home Page
 --------------------------------------------------------------*/
-
-body {
-    padding-top: 65px;
-}
-
-/* Slash as general background*/
-body::before {
-    content: "";
-    position: fixed;
-    background: #040404 url("../img/Others/Slash.jpg") top right no-repeat;
-    background-size: cover;
-    left: 0;
-    right: 0;
-    top: 0;
-    height: 100vh;
-    z-index: -1;
-}
-
-@media (min-width: 1024px) {
-    body::before {
-        background-attachment: fixed;
-    }
-}
-
-/* a tag: Links */
-a {
-    color: #fff;
-    text-decoration: none;
-    font-family: "Anta", sans-serif;
-}
-
-a:hover {
-    color: #35e888;
-    text-decoration: none;
-}
 
 .Edison {
     font-family: "Rubik Bubbles", system-ui;
     font-weight: lighter;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: "Anta", sans-serif; 
-} 
-
-
-
-/*--------------------------------------------------------------
-# Home Page
---------------------------------------------------------------*/
 #header {
     transition: ease-in-out 3s;
     position: relative;
@@ -93,7 +46,7 @@ h6 {
     overflow-y: auto;
     justify-content: space-between;
     padding: 0 20px;
-} 
+}
 
 #header * {
     transition: ease-in-out 1s;
@@ -125,7 +78,7 @@ h6 {
     margin-bottom: 5px;
     color: rgba(255, 255, 255, 0.8);
     font-family: "Anta", sans-serif;
-    
+
 }
 
 #header h2 span {
@@ -196,7 +149,7 @@ h6 {
 }
 
 #header.header-top h1 {
-    margin-right: auto; 
+    margin-right: auto;
     font-size: 36px;
 }
 
@@ -215,15 +168,71 @@ h6 {
 @media (max-width: 768px) {
     #home .container {
         transition: ease-in-out 2s;
-            position: relative;
-            height: 70vh;
-            display: flex;
-            z-index: 10;
-            overflow-y: auto;
-            justify-content: flex-start;
-            padding: 0 20px;
+        position: relative;
+        height: 70vh;
+        display: flex;
+        z-index: 10;
+        overflow-y: auto;
+        justify-content: flex-start;
+        padding: 0 20px;
     }
 }
+
+
+
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+body {
+    padding-top: 65px;
+}
+
+/* Slash as general background*/
+body::before {
+    content: "";
+    position: fixed;
+    background: #040404 url("../img/Others/Slash.jpg") top right no-repeat;
+    background-size: cover;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    z-index: -1;
+}
+
+@media (min-width: 1024px) {
+    body::before {
+        background-attachment: fixed;
+    }
+}
+
+/* a tag: Links */
+a {
+    color: #fff;
+    text-decoration: none;
+    font-family: "Anta", sans-serif;
+}
+
+a:hover {
+    color: #35e888;
+    text-decoration: none;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Anta", sans-serif; 
+} 
+
+
+
 
 /*--------------------------------------------------------------
 # Navigation Bar
